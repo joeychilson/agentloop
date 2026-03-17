@@ -1,0 +1,15 @@
+{
+  "name": "@agentloop/example-openrouter",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "bun run src/main.ts"
+  },
+  "dependencies": {
+    "@agentloop/core": "workspace:*",
+    "@agentloop/openrouter": "workspace:*",
+    "@openrouter/sdk": "^0.9.11",
+    "zod": "^4.3.6"
+  }
+}

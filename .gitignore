@@ -1,0 +1,34 @@
+# Dependencies
+node_modules
+
+# Build output
+dist
+*.tgz
+
+# Test & coverage
+coverage
+*.lcov
+
+# Type artifacts
+*.tsbuildinfo
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Caches
+.cache
+.turbo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+*.swp
+*.swo

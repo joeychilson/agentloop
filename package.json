@@ -1,0 +1,41 @@
+{
+  "name": "agentloop",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Minimal, composable agent loop library for TypeScript",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "bun --filter '*' dev",
+    "build": "bun --filter '@agentloop/core' build && bun --filter '*' build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check",
+    "typecheck": "tsc --noEmit",
+    "check": "bun run fmt:check && bun run lint && bun run typecheck && bun run test",
+    "clean": "bun --filter '*' clean",
+    "prerelease": "bun run check && bun run build",
+    "release": "bun run prerelease && changeset publish",
+    "version:bump": "changeset version"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.30.0",
+    "@types/bun": "^1.3.10",
+    "oxfmt": "^0.37.0",
+    "oxlint": "^1.52.0",
+    "tsdown": "^0.21.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

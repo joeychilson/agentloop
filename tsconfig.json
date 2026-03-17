@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "paths": {
+      "@agentloop/core": ["./packages/core/src/index.ts"],
+      "@agentloop/core/test": ["./packages/core/src/test.ts"],
+      "@agentloop/anthropic": ["./packages/anthropic/src/index.ts"],
+      "@agentloop/openai": ["./packages/openai/src/index.ts"],
+      "@agentloop/google": ["./packages/google/src/index.ts"],
+      "@agentloop/openrouter": ["./packages/openrouter/src/index.ts"],
+      "@agentloop/policies": ["./packages/policies/src/index.ts"]
+    }
+  },
+  "include": ["packages/*/src", "examples/*/src"]
+}
