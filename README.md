@@ -6,6 +6,27 @@ Build AI agents with tool use, streaming, structured output, policies, and obser
 
 > **Warning:** This project is under active development. APIs may change without notice.
 
+## Install
+
+```bash
+npm install @agentloop/core
+```
+
+Then add a provider:
+
+```bash
+npm install @agentloop/anthropic @anthropic-ai/sdk
+npm install @agentloop/openai openai
+npm install @agentloop/google @google/genai
+npm install @agentloop/openrouter openai
+```
+
+Optionally add common policies:
+
+```bash
+npm install @agentloop/policies
+```
+
 ## Quick start
 
 ```ts
