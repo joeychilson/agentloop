@@ -1,6 +1,6 @@
 {
   "name": "@agentloop/google",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Google Gemini provider for @agentloop/core",
   "keywords": [
     "agent",
@@ -43,7 +43,7 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@agentloop/core": "workspace:*"
+    "@agentloop/core": "^0.1.0"
   },
   "peerDependencies": {
     "@google/genai": "^1.45.0"

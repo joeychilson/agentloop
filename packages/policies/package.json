@@ -1,6 +1,6 @@
 {
   "name": "@agentloop/policies",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Common policies for @agentloop/core agents",
   "keywords": [
     "agent",
@@ -42,7 +42,7 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@agentloop/core": "workspace:*"
+    "@agentloop/core": "^0.1.0"
   },
   "engines": {
     "node": ">=20"
