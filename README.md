@@ -1,31 +1,10 @@
 # agentloop
 
+> **Experimental:** This project was built to explore an idea. Development may slow down or stop entirely. APIs, configuration formats, and features may change or disappear without notice.
+
 Minimal, composable agent loop for TypeScript.
 
 Build AI agents with tool use, streaming, structured output, policies, and observers. Zero dependencies in the core. Works with any LLM provider.
-
-> **Warning:** This project is under active development. APIs may change without notice.
-
-## Install
-
-```bash
-npm install @agentloop/core
-```
-
-Then add a provider:
-
-```bash
-npm install @agentloop/anthropic @anthropic-ai/sdk
-npm install @agentloop/openai openai
-npm install @agentloop/google @google/genai
-npm install @agentloop/openrouter openai
-```
-
-Optionally add common policies:
-
-```bash
-npm install @agentloop/policies
-```
 
 ## Quick start
 
